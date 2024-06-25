@@ -1,0 +1,87 @@
+object Form37: TForm37
+  Left = 0
+  Top = 0
+  Caption = 'Form37'
+  ClientHeight = 495
+  ClientWidth = 383
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object Layout1: TLayout
+    Align = Bottom
+    Position.Y = 423.000000000000000000
+    Size.Width = 383.000000000000000000
+    Size.Height = 72.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Layout2: TLayout
+      Align = Center
+      Size.Width = 265.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object btnListen: TButton
+        Align = Right
+        Position.X = 177.000000000000000000
+        Size.Width = 88.000000000000000000
+        Size.Height = 57.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Listen'
+      end
+      object btnType: TButton
+        Align = Center
+        Size.Width = 73.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Type'
+        OnClick = btnTypeClick
+      end
+      object btnClear: TButton
+        Align = Left
+        Size.Width = 73.000000000000000000
+        Size.Height = 57.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Clear'
+        OnClick = btnClearClick
+      end
+    end
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemAppearance'
+    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 383.000000000000000000
+    Size.Height = 391.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    ItemAppearance.ItemHeight = 60
+    ItemAppearance.ItemEditHeight = 60
+    ItemAppearanceObjects.ItemObjects.Text.WordWrap = True
+    ItemAppearanceObjects.ItemObjects.Accessory.AccessoryType = Detail
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 11
+    Size.Width = 383.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    object Button1: TButton
+      Align = Right
+      Position.X = 335.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Go'
+      OnClick = Button1Click
+    end
+  end
+end
